@@ -10,8 +10,8 @@ module.exports.matriContact = (event, context, callback) => {
             statusCode: err ? 500 : 200,
             headers: {
                 'Content-Type': 'application/json',
-                // 'Access-Control-Allow-Origin': 'https://master.d3inofo3le5r0t.amplifyapp.com',
-                'Access-Control-Allow-Origin': 'http://localhost:3000',
+                'Access-Control-Allow-Origin': 'https://master.d3inofo3le5r0t.amplifyapp.com',
+                // 'Access-Control-Allow-Origin': 'http://localhost:3000',
             },
             body: JSON.stringify({
                 message: err ? err.message : data,
